@@ -1,11 +1,40 @@
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
+import { PriceHightLight, TransactionsContainer, TransactionsTable } from "./styles";
 
 export function Transactions() {
-    return(
+    return (
         <div>
             <Header />
             <Summary />
+
+            <TransactionsContainer>
+                <TransactionsTable>
+                    <tbody>
+                        <tr>
+                            <td width="50%">Website Development</td>
+                            <td>
+                                <PriceHightLight variant="income">
+                                    $ 12,000.00
+                                </PriceHightLight>
+                            </td>
+                            <td>Selling</td>
+                            <td>13/04/2022</td>
+                        </tr>
+
+                        <tr>
+                            <td width="50%">Hamburguer</td>
+                            <td>
+                                <PriceHightLight variant="outcome">
+                                    - $59.00
+                                </PriceHightLight>
+                            </td>
+                            <td>Food</td>
+                            <td>13/04/2022</td>
+                        </tr>
+                    </tbody>
+                </TransactionsTable>
+            </TransactionsContainer>
         </div>
     )
 }
