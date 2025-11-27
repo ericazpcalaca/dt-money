@@ -15,6 +15,14 @@
             "category": "Alimentacao",
             "price":50,
             "createdAt":"2022-07-29T16:36:44.5052"
+        },
+        {
+            "id": 3,
+            "description": "BBC",
+            "type": "outcome",
+            "category": "Alimentacao",
+            "price":100,
+            "createdAt":"2022-08-15T16:36:44.5052"
         }
     ]
 }
